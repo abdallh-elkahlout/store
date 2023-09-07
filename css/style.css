@@ -242,8 +242,8 @@ del {
   display: flex;
   align-items: center;
   margin-left: 200px;
-  padding: 15px;
   z-index: 1;
+  padding-left: 15px;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
   opacity: 0;
@@ -261,9 +261,8 @@ del {
   left: 0;
   opacity: 0;
 }
-.add-cart img {
+.add-cart button .bag{
   width: 20px;
-  height: 15px;
 }
 
 .section5 {

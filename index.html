@@ -22,8 +22,88 @@
 
 <body>
     <!-- start top navbar -->
-    <div id="headerContent"></div>
-    <!-- start sections -->
+    <div class="navbar navbar-expand-lg topNavbar">
+        <div class="container-fluid ps-4 pe-4">
+            <a href="mailto:example@example.com" class="text-decoration-none text-dark ">
+                <i class="bi bi-envelope "></i>
+                example@gmail.com</a>
+            <div class="buttons">
+                <button class="btn rounded-pill  me-3 " type="submit" data-bs-toggle="modal" data-bs-target="#language">
+                    <i class="bi bi-flag-fill"></i>
+                    <span class="mx-1 color-dark-emphasis">|</span>
+                    SAR
+                </button>
+                <button class="btn rounded-pill " type="submit">
+                    <i class="bi bi-person"></i>
+                    Login
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="language" tabindex="-1" aria-labelledby="orderProcess" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered " role="document">
+            <div class="modal-content">
+                <div class="mt-1 ms-3 me-3 d-flex justify-content-end">
+                    <button type="button" class="btn-close mt-3" data-bs-dismiss="modal" aria-label="Close"
+                        style="color: red;"></button>
+                </div>
+                <form action="" class="d-flex flex-column align-items-start p-4">
+                    <label for="lang">Language</label>
+                    <div class="choise">
+                        <select id="lang" class="form-select custom-select" aria-label="Default select example">
+                            <option value="">English</option>
+                            <option value="1">العربية</option>
+                        </select>
+                    </div>
+                    <label for="currency">Currency</label>
+                    <div class="choise">
+                        <select id="currency" class="form-select custom-select" aria-label="Default select example">
+                            <option value="">Saudi Riyal</option>
+                            <option value="1">US Dollar</option>
+                        </select>
+                    </div>
+                    <button class="ok align-self-end mt-3">Ok</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- end top navbar -->
+
+    <!-- start navbar -->
+    <nav class="navbar navbar-expand-lg" id="navbar">
+        <div class="container-fluid">
+            <a class="title text-decoration-none text-dark" href="#">
+                <img class="logo" src="https://cdn.salla.sa/RnAWy/zp4xq0jz9G8vb9OfkiaR7ftNV2fuRA3GQizgfOpL.png" alt="">
+                <span id="store-name" class="text-nowrap ps-2">STORE NAME</span>
+            </a>
+            <div class="search">
+                <i class="bi bi-search se"></i>
+                <input type="text" name="" id="" placeholder="search">
+            </div>
+            <a href="#" class="text-decoration-none text-black">
+                <div class="cart">
+                    <div class="content d-flex " data-before-text="0">
+                        <i class="bi bi-cart3 me-2 "></i>
+                        <span class="salary me-1 mt-2">0</span>
+                        <span class="currency mt-2">SAR</span>
+                    </div>
+                </div>
+            </a>
+
+        </div>
+    </nav>
+    <!-- end navbar -->
+
+    <!-- start titels bar -->
+    <section class="titels ">
+        <ul class="list-inline">
+            <li class="d-inline ms-4"><a class="first p-3" href="#">title1</a></li>
+            <li class="d-inline"> <a class="p-3" href="#">title2</a></li>
+            <li class="d-inline"> <a class="p-3" href="#">title3</a></li>
+            <li class="d-inline"> <a class="p-3" href="#">title4</a></li>
+        </ul>
+    </section>
+    <!-- end titels bar --> <!-- start sections -->
 
     <!-- start section 1 -->
     <section class="section1 mt-5 ps-2 d-flex justify-content-center">
@@ -651,8 +731,75 @@
     <!-- end sections -->
 
     <!-- start footer -->
-    <div id="footerContent"></div>
+    <div class="footer pt-5 pb-5 text-center text-md-start ">
+        <div class="container-fluid ps-4">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="info mb-5">
+                        <h5 class="mb-4 ps-2">Important Links</h5>
+                        <p>Lodunt laudantiuxime dolorem libero est placeat aliquid necessitatibus!</p>
+                        <p>Ltate possimus incidunt lue suscipit maxime dolorem fuglibero est placeat aliquid
+                            necessitatibus!</p>
+                        <p>Ltate est placeat aliquid necessitatibus!</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="info mb-5 about">
+                        <h5 class="mb-4 ps-2">About Us</h5>
+                        <p>Ltate possimus incidunt lue suscipit maxime dolorem fuglibero est placeat aliquid
+                            necessitatibus!</p>
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
+                                <path
+                                    d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                            </svg>
+                        </a>
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
+                                <path
+                                    d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="info mb-5">
+                        <h5 class="mb-4 ps-2">Contact Us</h5>
+                        <div class="contact mb-3">
+                            <a href="https://wa.me/+97342422232323" class="text-decoration-none text-dark">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
+                                    <path
+                                        d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z" />
+                                </svg> +97342422232323
+                            </a>
+                        </div>
+                        <div class="contact mb-3">
+                            <a href="tel:+97342422232323" class="text-decoration-none text-dark">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512">
+                                    <path
+                                        d="M16 64C16 28.7 44.7 0 80 0H304c35.3 0 64 28.7 64 64V448c0 35.3-28.7 64-64 64H80c-35.3 0-64-28.7-64-64V64zM144 448c0 8.8 7.2 16 16 16h64c8.8 0 16-7.2 16-16s-7.2-16-16-16H160c-8.8 0-16 7.2-16 16zM304 64H80V384H304V64z" />
+                                </svg> +97342422232323
+                            </a>
+                        </div>
+                        <div class="contact mb-3">
+                            <a href="mailto:example@example.com" class="text-decoration-none text-dark ">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
+                                    <path
+                                        d="M64 112c-8.8 0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z" />
+                                </svg> example@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- end footer -->
+    <!-- start up button -->
+    <button id="up"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512">
+            <path
+                d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z" />
+        </svg></button>
+    <!-- end up button -->
 
     <script>
         // Add old pricing
@@ -666,6 +813,34 @@
                 delElement.style.color = '#bbb';
             }
         });
+        // fixed navbar
+        // up button
+        let nav = document.getElementById("navbar");
+        let btn = document.getElementById("up");
+
+        window.onscroll = function () {
+            if (window.scrollY >= 300) {
+                nav.style.position = "fixed";
+                nav.style.top = 0;
+            } else {
+                nav.style.position = "relative";
+                nav.style.top = "auto";
+            }
+
+            if (window.scrollY >= 2500) {
+                btn.style.display = "block";
+            } else {
+                btn.style.display = "none";
+            }
+        };
+
+        btn.onclick = function () {
+            window.scrollTo({
+                left: 0,
+                top: 0,
+                behavior: 'smooth'
+            });
+        };
     </script>
 
 
@@ -695,15 +870,6 @@
                     items: 4
                 }
             }
-        })
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
-        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script>
-        $(function () {
-            $("#headerContent").load("header.html")
-            $("#footerContent").load("footer.html")
         })
     </script>
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>

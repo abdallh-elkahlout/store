@@ -283,6 +283,8 @@ del {
   fill: #fbbf24;
 }
 /* end sections */
+
+/* start footer */
 .footer .col-sm-12 {
   text-align: start;
 }
@@ -297,3 +299,18 @@ del {
 .contact svg {
   margin-right: 11px;
 }
+/* end footer */
+
+/* start up button */
+#up {
+  background: white;
+  padding: 5px 2px;
+  width: 35px;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  z-index: 999;
+}
+/* end up button */

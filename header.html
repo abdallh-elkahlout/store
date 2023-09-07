@@ -71,13 +71,16 @@
                 <i class="bi bi-search se"></i>
                 <input type="text" name="" id="" placeholder="search">
             </div>
-            <div class="cart">
+            <a href="#" class="text-decoration-none text-black" >
+                <div class="cart">
                 <div class="content d-flex " data-before-text="0">
                     <i class="bi bi-cart3 me-2 "></i>
                     <span class="salary me-1 mt-2">0</span>
                     <span class="currency mt-2">SAR</span>
                 </div>
             </div>
+            </a>
+            
         </div>
     </nav>
     <!-- end navbar -->
@@ -92,6 +95,20 @@
         </ul>
     </section>
     <!-- end titels bar -->
+
+    <script>
+        let nav = document.getElementById("navbar");
+        window.onscroll = function () {
+            if (window.scrollY >= 300) {
+                nav.style.position = "fixed";
+                nav.style.top = 0;
+            } else {
+                nav.style.position = "relative";
+                nav.style.top = "auto";
+            }
+        };
+
+    </script>
 </body>
 
 </html>
